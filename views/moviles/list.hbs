@@ -1,0 +1,18 @@
+<h1>Estas en LIST</h1>
+{{!-- <h1>Name: {{user.username}}</h1>
+<h1>Email: {{user.email}}</h1> --}}
+
+{{#each moviles}}
+    <div>
+        <h1>{{nombre}}</h1>
+        <h1>{{marca}}</h1>
+        <h1>{{precio}}</h1>
+        <h3>{{timeago fecha}}</h3>
+        <div>
+            <button type="submit"><a href="/moviles/edit/{{id}}">Editar</a></button>
+            <button type="submit"><a href="/moviles/delete/{{id}}">Borrar</a></button>
+        </div>
+    </div>
+{{else}}
+    <h1>No ha moviles</h1>
+{{/each}}

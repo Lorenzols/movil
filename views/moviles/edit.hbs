@@ -1,0 +1,9 @@
+<div class="container">
+    <h1>Estas en EDIT</h1>
+    <form action="/moviles/edit/{{movil.id}}" method="post">
+        <input type="text" name="nombre" placeholder="Nombre" value="{{movil.nombre}}">
+        <input type="text" name="marca" placeholder="Marca" value="{{movil.marca}}">
+        <input type="text" name="precio" placeholder="Precio" value="{{movil.precio}}">
+        <button type="submit" >Cambiar</button>
+    </form>
+</div>
